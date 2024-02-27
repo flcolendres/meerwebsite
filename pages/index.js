@@ -17,7 +17,7 @@ export default function Home() {
       <Head>
         <title>Toronto Driving Lesson</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"></link>
       </Head>
       <Navbar>
@@ -35,7 +35,7 @@ export default function Home() {
 
       <main className={`${styles.main}`}>
         <Container style={{position:'relative', textAlign:'center', color:'white'}}>
-          <Image src="/assets/highway.jpg" style={{maxWidth:'100%', borderRadius:'50%', boxShadow:'0px 5px 5px 0px black'}}/>
+          <Image src="/assets/highway.jpg" style={{maxWidth:'100%', borderRadius:'50%'}}/>
           <div className={`${styles.textA}`}>Looking for a driving lesson?</div>
           <div className={`${styles.textB}`}>
             <mark>Email: {email}</mark><br /> 
