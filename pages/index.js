@@ -13,9 +13,6 @@ export default function Home() {
     <>
       <Head>
         <title>Toronto Driving Lesson</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"></link>
       </Head>
       <Navbar>
       <Container>
@@ -32,7 +29,7 @@ export default function Home() {
 
       <main className={`${styles.main}`}>
         <Container style={{position:'relative', textAlign:'center', color:'white'}}>
-          <Image src="/assets/highway.jpg" style={{maxWidth:'100%', borderRadius:'50%'}}/>
+          <Image src="/assets/highway.jpg" style={{maxWidth:'100%', borderRadius:'50%'}} alt="highway"/>
           <div className={`${styles.textA}`}>Looking for a driving lesson?</div>
           <div className={`${styles.textB}`}>
             <mark>Email: {email}</mark><br /> 
@@ -70,7 +67,7 @@ export default function Home() {
           </Row>
         </Container>
         <Container style={{marginTop:"1rem", display: "flex", justifyContent: "center", alignItems: "center"}}>
-          <Image src="https://s3.amazonaws.com/toyota.site.toyota-v5/tci-prod/toyota/media/build/cor/col/big/b24_bprbe_fl1_01k3_a.png?ck=02262024051206" width="100%"/>
+          <Image src="https://s3.amazonaws.com/toyota.site.toyota-v5/tci-prod/toyota/media/build/cor/col/big/b24_bprbe_fl1_01k3_a.png?ck=02262024051206" width="100%"  alt="highway"/>
         </Container>
       </main>
 

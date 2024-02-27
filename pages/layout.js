@@ -1,12 +1,10 @@
+
 import { Inter } from "next/font/google";
-import "@/app/globals.css";
+import "@/styles/globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata = {
-  title: "Toronto Driving Lesson",
-  description: "Start learning!",
-};
+
 
 export default function RootLayout({ children }) {
   return (
