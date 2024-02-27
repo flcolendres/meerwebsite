@@ -14,26 +14,38 @@
   border-radius: 30%;
 }
 
-.card{
-  align-self: 'center'
+.cards{
+  width: 18rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
 
-@media (max-width: 450px){
+@media (max-width: 799px){
   .textA{
     position:absolute;
     top:30%; 
     left:50%;
     transform: translate(-50%, -50%); 
     font-size:20px;
+    font-weight: bold;
   }
   .textB{
     position:absolute;
-    top:60%;
+    top:70%;
     left:50%; 
     transform:translate(-50%, -50%);
     font-size:12px;
+  }
+
+}
+
+@media (orientation: portrait) and (max-width:520px){
+  .cards{
+    width: 8rem;
+    font-size: 12px;
   }
 }
 
@@ -44,6 +56,7 @@
     left:50%;
     transform: translate(-50%, -50%); 
     font-size:40px;
+    font-weight: bold;
   }
   .textB{
     position:absolute;

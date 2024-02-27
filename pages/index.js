@@ -1,14 +1,11 @@
 import Head from "next/head";
 import styles from "../styles/page.module.css"
-import { Col, Container, Nav, Navbar, Row, Image, Card, Alert } from "react-bootstrap";
+import { Col, Container, Nav, Navbar, Row, Image, Card } from "react-bootstrap";
 
 export default function Home() {
   const email = "waiselham@hotmail.ca"
   const phone = "647-303-2773"
   function showMessage(){
-    // <Alert variant="success">
-    //   <Alert.Heading>You can contact me via:</Alert.Heading>
-    // </Alert>
     alert(`E-mail: ${email}\nPhone: ${phone}`)
     console.log("pressed")
   }
@@ -39,7 +36,8 @@ export default function Home() {
           <div className={`${styles.textA}`}>Looking for a driving lesson?</div>
           <div className={`${styles.textB}`}>
             <mark>Email: {email}</mark><br /> 
-            <mark>Phone: {phone} </mark>
+            <mark>Phone: {phone} </mark> <br />
+            <mark>Within North York only!</mark>
           </div>
         </Container>
         {/* <Container fluid="md">
@@ -51,34 +49,29 @@ export default function Home() {
         </h3>
         </Container> */}
 
-        <Container fluid style={{marginTop:"5rem"}}>
+        <Container style={{marginTop:"1rem", display: "flex", justifyContent: "center", alignItems: "center"}}>
           <Row>
             <Col xs="auto">
-              <Card style={{ width: '15rem' }}>
+              <Card className={`${styles.cards}`}>
                 <Card.Img variant="top" src="/assets/g2.png" />
                 <Card.Body>
-                  <Card.Title>G2 Lesson Price</Card.Title>
-                  <Card.Text>
-                    $50/hr
-                  </Card.Text>
+                  <Card.Text style={{fontSize:"18px"}}>$50/hr</Card.Text>
                 </Card.Body>
               </Card>
             </Col>
             <Col xs="auto">
-              <Card style={{ width: '15rem' }}>
+              <Card className={`${styles.cards}`}>
                 <Card.Img variant="top" src="/assets/g.png" />
                 <Card.Body>
-                  <Card.Title>G Lesson Price</Card.Title>
-                  <Card.Text>
-                    $60/hr
-                  </Card.Text>
+                  <Card.Text style={{fontSize:"18px"}}>$60/hr</Card.Text>
                 </Card.Body>
               </Card>
             </Col>
           </Row>
         </Container>
-          
-          {/* <Image className={`${styles.img}`}src="https://www.autos.ca/wp-content/uploads/2013/06/478204361.jpg"></Image> */}
+        <Container style={{marginTop:"1rem", display: "flex", justifyContent: "center", alignItems: "center"}}>
+          <Image src="https://s3.amazonaws.com/toyota.site.toyota-v5/tci-prod/toyota/media/build/cor/col/big/b24_bprbe_fl1_01k3_a.png?ck=02262024051206" width="100%"/>
+        </Container>
       </main>
 
 
